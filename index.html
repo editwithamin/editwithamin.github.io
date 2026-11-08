@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amin Sheikh | Video Editor</title>
+  <meta name="description" content="Professional video editor for YouTube, reels, brands and weddings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="logo">Amin Sheikh</a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="btn btn-small">Hire me</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <!-- Left: tumhari photo (images/profile.jpg) -->
+      <div class="hero-photo">
+        <img src="images/WhatsApp Image 2026-11-03 at 9.26.12 PM.jpeg" alt="Amin Sheikh, video editor" onerror="this.style.display='none'">
+      </div>
+
+      <!-- Right: content -->
+      <div class="hero-text">
+      <h1>I edit videos people watch till the end.</h1>
+      <p class="lead">Video editor for Instagram, brands and reels creators. Fast turnaround, clean cuts, strong storytelling.</p>
+      <div class="actions">
+        <a href="#work" class="btn">See my work</a>
+        <a href="#" class="btn btn-ghost js-whatsapp">WhatsApp me</a>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- Timeline: mouse ya touch karke playhead move karo -->
+    <div class="timeline" id="timeline" aria-hidden="true">
+      <div class="ruler"></div>
+      <div class="track"><i style="left:0;width:22%"></i><i style="left:23%;width:14%"></i><i style="left:38%;width:30%"></i><i style="left:69%;width:12%"></i><i style="left:82%;width:18%"></i></div>
+      <div class="track"><i style="left:7%;width:16%"></i><i style="left:40%;width:20%"></i><i style="left:77%;width:16%"></i></div>
+      <div class="track audio"></div>
+      <div class="playhead" id="playhead"><span id="timecode">00:00:00</span></div>
+    </div>
+  </section>
+
+  <!-- SHOWREEL: 3 reels -->
+  <section class="section" id="showreel">
+    <h2>Showreel</h2>
+    <!-- Har reel ki YouTube ID data-id me daalo -->
+    <div class="reels" id="reel-grid">
+      <article class="card reel" data-video="video/1005.mp4" data-thumbnail="images/talking-thumb.jpg">
+        <button class="video" aria-label="Play Talking head reel"><img alt=""><span class="chip"><i></i>Reel</span><span class="play"></span></button>
+        <h3>Talking head</h3><p>Tight cuts, captions and clean sound for creators who speak to camera.</p>
+        <span class="watch">Watch reel <b>&rarr;</b></span>
+      </article>
+      <article class="card reel" data-video="video/1024.mp4" data-thumbnail="images/talking-thumb1.jpg">
+        <button class="video" aria-label="Play Podcast reel"><img alt=""><span class="chip"><i></i>Reel</span><span class="play"></span></button>
+        <h3>Product Showcase</h3><p>Eye-catching product edits with dynamic visuals, smooth transitions.</p>
+        <span class="watch">Watch reel <b>&rarr;</b></span>
+      </article>
+      <article class="card reel" data-video="video/Nandini_Ma'am_POP_POD_MARKETING_REEL(1).mp4"  data-thumbnail="images/talking-thumb2.jpg">
+        <button class="video" aria-label="Play Brand reel reel"><img alt=""><span class="chip"><i></i>Reel</span><span class="play"></span></button>
+        <h3>Marketing Explainer</h3><p>Creative marketing edits with engaging visuals and storytelling.</p>
+        <span class="watch">Watch reel <b>&rarr;</b></span>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <h2>Selected work</h2>
+    <div class="grid" id="work-grid"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2>What I do</h2>
+    <dl class="services">
+      <div><dt>YouTube long-form</dt><dd>Pacing, story structure, captions, sound design and thumbnails-ready cuts.</dd></div>
+      <div><dt>Reels and Shorts</dt><dd>Vertical edits with hooks, subtitles and trending-style transitions.</dd></div>
+      <div><dt>Brand and corporate</dt><dd>Ads, product videos, event recaps and explainers that match your brand.</dd></div>
+      <div><dt>Color and sound</dt><dd>Color grading, audio cleanup, nasheed sync and final mixing.</dd></div>
+    </dl>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <h2>About</h2>
+    <p>Hi, I'm Amin Sheikh. I edit short-form videos with fresh ideas, quick turnaround and attention to detail. Every project gets my full focus, and I'm always up for the next challenge.</p>
+    <p class="tools">DaVinci Resolve, CapCut</p>
+  </section>
+
+  <!-- CONTACT
+  <section class="section contact" id="contact">
+    <h2>Got footage? Let's cut it.</h2>
+    <p>Tell me about your project and I'll reply within 24 hours.</p>
+    <div class="actions">
+      <a href="#" class="btn js-whatsapp">WhatsApp</a>
+      <a href="#" class="btn btn-ghost js-email">Email</a>
+      <a href="#" class="btn btn-ghost js-instagram">Instagram</a>
+    </div>
+  </section>
+</main> -->
+
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+
+    <div class="contact-heading">
+      <span class="contact-label">GET IN TOUCH</span>
+      <h2>Let's work together.</h2>
+      <p>
+        Have a project in mind? Tell me about it and
+        let's create something amazing.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- LEFT: CONTACT INFORMATION -->
+      <div class="contact-info">
+
+        <div class="contact-info-heading">
+          <h3>Contact Information</h3>
+          <p>Let's connect and discuss your next project.</p>
+        </div>
+
+        <a href="#" class="contact-info-item js-email">
+          <span class="contact-icon">✉</span>
+          <span class="contact-info-text">
+            <small>Email</small>
+            <strong>amin.visualpro@gmail.com</strong>
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+        <a href="#" class="contact-info-item js-whatsapp">
+          <span class="contact-icon">◉</span>
+          <span class="contact-info-text">
+            <small>WhatsApp</small>
+            <strong>Let's chat</strong>
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+        <a href="#" class="contact-info-item js-instagram">
+          <span class="contact-icon">◎</span>
+          <span class="contact-info-text">
+            <small>Instagram</small>
+            <strong>Follow my work</strong>
+          </span>
+          <span class="contact-arrow">↗</span>
+        </a>
+
+        <div class="contact-availability">
+          <span class="availability-dot"></span>
+          <div>
+            <strong>Available for projects</strong>
+            <p>Open to new editing opportunities.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="contact-form-wrapper">
+
+        <div class="contact-form-heading">
+          <h3>Send a message</h3>
+          <p>Fill out the form below to get started.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+
+          <div class="form-row">
+
+            <label>
+              Your name
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              >
+            </label>
+
+            <label>
+              Email address
+              <input
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              >
+            </label>
+
+          </div>
+
+          <div class="form-row">
+
+            <label>
+              Project type
+              <select name="type" required>
+                <option value="" disabled selected>
+                  Select project
+                </option>
+                <option value="Talking head">Talking head</option>
+                <option value="Podcast">Podcast</option>
+                <option value="Instagram Reel">Instagram Reel</option>
+                <option value="YouTube video">YouTube video</option>
+                <option value="Brand video">Brand video</option>
+                <option value="Wedding video">Wedding video</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Subject
+              <input
+                type="text"
+                name="subject"
+                placeholder="Project subject"
+                required
+              >
+            </label>
+
+          </div>
+
+          <label>
+            Your message
+            <textarea
+              name="message"
+              placeholder="Tell me about your project..."
+              rows="5"
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn contact-submit">
+            Send on WhatsApp
+            <span>↗</span>
+          </button>
+
+          <p class="form-note">
+            Your message will open in WhatsApp for you to send.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <a href="#top" class="footer-logo">
+      Amin Sheikh | Video Editor & Visual Storyteller<span>.</span>
+    </a>
+
+    <p class="footer-text">
+      Crafted with creativity. Edited with purpose.
+    </p>
+
+    <div class="footer-links">
+      <a href="#top">Home</a>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="year"></span> Amin Sheikh.
+        All rights reserved.
+      </p>
+
+      <a href="#top" class="back-top">
+        Back to top ↑
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<dialog id="modal">
+  <button id="close" type="button">✕</button>
+  <div id="frame"></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
