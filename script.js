@@ -334,13 +334,17 @@ function openLocal(src, vertical = true) {
 
   if (playPromise !== undefined) {
 
+    // playPromise.catch(function () {
+
+    //   video.muted = true;
+
+    //   video.play().catch(function () {});
+
+    // });
+
     playPromise.catch(function () {
-
-      video.muted = true;
-
-      video.play().catch(function () {});
-
-    });
+  console.log("Autoplay blocked. Press play manually.");
+});
 
   }
 
